@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Git post-commit hook to perform time/commit-based OTS anchoring
+# This script delegates to Python for logic.
+repo_root="$(git rev-parse --show-toplevel)"
+python3 "$repo_root/scripts/anchor_ots.py" || true
