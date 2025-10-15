@@ -2,7 +2,7 @@
 
 **Prove what’s real in a synthetic world.**
 
-	NOTE: This project is still under development. Features and details may change. If you find a bug, let me know. Thank you. ~ James
+	NOTE: This project is still under development. Features and details may change.
 
 ## 🌐 Overview
 
