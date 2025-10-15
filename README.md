@@ -31,6 +31,7 @@ This repository houses the entire Verified Provenance project, including referen
 ```
 verifiedprovenance/
 ├─ author/              # AuthorProvenance - CLI tool for text-based content
+├─ author/automated/    # Automated OTS anchoring variant
 ├─ docs/                # Documentation, guides, and specifications
 ├─ examples/            # Example manifests, workflows, and integrations
 └─ scripts/             # Utility scripts for verification and automation
