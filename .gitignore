@@ -1,0 +1,86 @@
+# === JetBrains IDE ===
+.idea/
+*.iml
+
+# Optional: allow shared code styles or run configs
+# !.idea/codeStyles/
+# !.idea/runConfigurations/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Bytecode and tool caches
+.cache/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pip/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+env/
+venv/
+.venv/
+ENV/
+.ENV/
+.env/             # virtualenv folder if named .env
+
+# Local packages (PEP 582)
+__pypackages__/
+
+# Distribution and packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+*.whl
+pip-wheel-metadata/
+
+# Logs and temp
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Test results
+htmlcov/
+.coverage
+coverage.xml
+nosetests.xml
+test-results/
+
+# === Docker ===
+*.pid
+*.seed
+*.pid.lock
+docker-compose.override.yml
+docker-compose.*.yml
+Dockerfile.*
+.dockerignore
+
+# === Secrets ===
+.env               # dotenv file with secrets or config
+.env.*             # e.g. .env.dev, .env.prod
+**/.env*
+
+# === OS/System noise ===
+.DS_Store
+Thumbs.db
+
+# === VS Code (optional safety) ===
+.vscode/
+
+# === Extras I think of ===
+cvs/
+CVS/
+**/*.dump
+**/*.log
+000.txt
+/000/**.*
