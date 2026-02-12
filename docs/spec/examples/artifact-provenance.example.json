@@ -1,0 +1,20 @@
+{
+  "spec_version": "1.0",
+  "domain": "acmewidgets.com",
+  "artifact_url": "https://acmewidgets.com/news/new-widget-launch/",
+  "content_sha256": "4f2f37f0902fcf3d95f710a6a11f8f44c8fabe4788f58f5f4fdd0a94b295f2ce",
+  "issued_at": "2026-02-12T00:00:00Z",
+  "source": {
+    "platform": "wordpress",
+    "post_id": 42,
+    "post_modified_gmt": "2026-02-12 00:00:00"
+  },
+  "signature": {
+    "type": "none",
+    "value": ""
+  },
+  "timestamp": {
+    "type": "none",
+    "value": ""
+  }
+}
