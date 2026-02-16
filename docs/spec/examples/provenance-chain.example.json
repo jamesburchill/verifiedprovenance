@@ -1,0 +1,28 @@
+{
+  "spec_version": "1.1",
+  "artifact_id": "art_9b57df0e8f0aexample",
+  "artifact_url": "https://acmewidgets.com/news/new-widget-launch/",
+  "events": [
+    {
+      "event_id": "evt_01J9YH7X4RT1EXAMPLE",
+      "event_type": "ATTESTATION_ISSUED",
+      "recorded_at": "2026-02-12T00:00:05Z",
+      "prev_event_hash": null,
+      "event_hash": "2d58e231ea3f5f498349be9063988f2faaf5b9ae9d36b0e2a37ffcb7b87e5fb0"
+    },
+    {
+      "event_id": "evt_01J9YJ42B8Y4EXAMPLE",
+      "event_type": "ATTESTATION_SUPERSEDED",
+      "recorded_at": "2026-02-13T09:12:00Z",
+      "supersedes_event_id": "evt_01J9YH7X4RT1EXAMPLE",
+      "reason_code": "CONTENT_CORRECTION",
+      "prev_event_hash": "2d58e231ea3f5f498349be9063988f2faaf5b9ae9d36b0e2a37ffcb7b87e5fb0",
+      "event_hash": "86af9b23a0c6f4d5ca71f0f8ee3f9f8ee73af0a0fb0a4991efe14b54a9f25ded"
+    }
+  ],
+  "latest_event_id": "evt_01J9YJ42B8Y4EXAMPLE",
+  "integrity": {
+    "hash_chain_valid": true,
+    "anchoring_verified": true
+  }
+}

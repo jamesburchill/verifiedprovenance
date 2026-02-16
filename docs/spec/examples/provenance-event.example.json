@@ -1,0 +1,48 @@
+{
+  "spec_version": "1.1",
+  "event_id": "evt_01J9YH7X4RT1EXAMPLE",
+  "artifact_id": "art_9b57df0e8f0aexample",
+  "artifact_url": "https://acmewidgets.com/news/new-widget-launch/",
+  "event_type": "ATTESTATION_ISSUED",
+  "recorded_at": "2026-02-12T00:00:05Z",
+  "effective_at": "2026-02-12T00:00:00Z",
+  "issuer": {
+    "did": "did:web:acmewidgets.com",
+    "key_id": "did:web:acmewidgets.com#key-1"
+  },
+  "canonicalization": {
+    "method": "http-representation-v1",
+    "method_version": "1.0"
+  },
+  "artifact": {
+    "content_sha256": "4f2f37f0902fcf3d95f710a6a11f8f44c8fabe4788f58f5f4fdd0a94b295f2ce",
+    "content_type": "text/html",
+    "byte_length": 48219,
+    "encoding": "utf-8"
+  },
+  "context": {
+    "source_platform": "wordpress",
+    "source_record_id": "42",
+    "retrieval_method": "https_get",
+    "policy_version": "2026-02-01"
+  },
+  "supersedes_event_id": null,
+  "reason_code": null,
+  "prev_event_hash": null,
+  "event_hash": "2d58e231ea3f5f498349be9063988f2faaf5b9ae9d36b0e2a37ffcb7b87e5fb0",
+  "signature": {
+    "format": "dsse",
+    "alg": "Ed25519",
+    "value": "BASE64_SIGNATURE"
+  },
+  "timestamp": {
+    "type": "rfc3161",
+    "value": "BASE64_TSR"
+  },
+  "transparency": {
+    "log_id": "rekor-public",
+    "entry_id": "1234567890",
+    "inclusion_proof": "BASE64_OR_OBJECT",
+    "root_hash": "abcdef0123456789"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "spec_version": "1.1",
+  "domain": "acmewidgets.com",
+  "issued_at": "2026-02-12T00:00:00Z",
+  "keys": [
+    {
+      "id": "did:web:acmewidgets.com#key-1",
+      "type": "ed25519",
+      "public_key": "BASE58_OR_JWK_PLACEHOLDER"
+    }
+  ],
+  "artifact_discovery": {
+    "method": "suffix",
+    "suffix": ".provenance.json",
+    "html_link_rel": "provenance"
+  },
+  "evidence_api": {
+    "events_by_artifact": "https://acmewidgets.com/.well-known/provenance/events?artifact_url={artifact_url}",
+    "event_by_id": "https://acmewidgets.com/.well-known/provenance/events/{event_id}",
+    "chain_by_artifact": "https://acmewidgets.com/.well-known/provenance/chain/{artifact_id}",
+    "proof_by_event": "https://acmewidgets.com/.well-known/provenance/proof/{event_id}"
+  },
+  "policy": {
+    "signature_required": true,
+    "timestamp_required": true,
+    "transparency_anchoring_required": true,
+    "deletion_allowed": false,
+    "projection_only": true
+  }
+}
