@@ -1,0 +1,112 @@
+{
+  "json_canonicalization": [
+    {
+      "id": "json-001",
+      "input": {
+        "b": 2,
+        "a": 1
+      },
+      "expected_canonical_json": "{\"a\":1,\"b\":2}",
+      "expected_sha256": "43258cff783fe7036d8a43033f830adfc60ec037382473548ac742b888292777"
+    },
+    {
+      "id": "json-002",
+      "input": {
+        "z": {
+          "b": 2,
+          "a": [
+            3,
+            {
+              "d": "x",
+              "c": true
+            }
+          ]
+        },
+        "m": "text"
+      },
+      "expected_canonical_json": "{\"m\":\"text\",\"z\":{\"a\":[3,{\"c\":true,\"d\":\"x\"}],\"b\":2}}",
+      "expected_sha256": "690d4068b44b9c62199c299c0e2053810230b381f40c044a4555376c4f8c276a"
+    },
+    {
+      "id": "json-003",
+      "input": {
+        "unicode": "café",
+        "slash": "https://example.com/a/b",
+        "num": 1.5
+      },
+      "expected_canonical_json": "{\"num\":1.5,\"slash\":\"https://example.com/a/b\",\"unicode\":\"café\"}",
+      "expected_sha256": "7d47d69641f05d0f6e39d161e987bd746b032840f241a03b861c70bb0d0caf15"
+    }
+  ],
+  "url_canonicalization": [
+    {
+      "id": "url-001",
+      "input": "HTTPS://Example.COM:443/a/./b/../c/%2f?x=%2a#frag",
+      "expected": "https://example.com/a/c/%2F?x=%2A"
+    },
+    {
+      "id": "url-002",
+      "input": "http://EXAMPLE.com:80/news//item/",
+      "expected": "http://example.com/news/item/"
+    },
+    {
+      "id": "url-003",
+      "input": "https://Example.com:8443/docs/../spec?v=1#section-2",
+      "expected": "https://example.com:8443/spec?v=1"
+    }
+  ],
+  "event_hash": [
+    {
+      "id": "event-001",
+      "input": {
+        "spec_version": "1.1",
+        "event_id": "evt_vector_01",
+        "artifact_id": "art_vector_01",
+        "artifact_url": "https://example.com/article/",
+        "event_type": "ATTESTATION_ISSUED",
+        "recorded_at": "2026-01-01T00:00:05Z",
+        "effective_at": "2026-01-01T00:00:00Z",
+        "issuer": {
+          "did": "did:web:example.com",
+          "key_id": "did:web:example.com#key-1"
+        },
+        "canonicalization": {
+          "method": "http-representation-v1",
+          "method_version": "1.0"
+        },
+        "artifact": {
+          "content_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "content_type": "text/html",
+          "byte_length": 0,
+          "encoding": "utf-8"
+        },
+        "context": {
+          "source_platform": "test",
+          "source_record_id": "1",
+          "retrieval_method": "https_get",
+          "policy_version": "2026-01-01"
+        },
+        "supersedes_event_id": null,
+        "reason_code": null,
+        "prev_event_hash": null,
+        "event_hash": "this-field-is-excluded-from-hash",
+        "signature": {
+          "format": "dsse",
+          "alg": "Ed25519",
+          "value": "SIG"
+        },
+        "timestamp": {
+          "type": "rfc3161",
+          "value": "TSR"
+        },
+        "transparency": {
+          "log_id": "rekor-public",
+          "entry_id": "1",
+          "inclusion_proof": "proof",
+          "root_hash": "abc"
+        }
+      },
+      "expected_event_hash": "7ed31d2178fbd71137a239af0dc9bcff2008c0414c4b6af00e4f64478218e43c"
+    }
+  ]
+}
