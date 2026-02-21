@@ -18,3 +18,13 @@ jobs:
 
       - name: Boundary checks
         run: ./scripts/check-public-boundary.sh
+
+      - name: Run verifier conformance vectors
+        run: python3 scripts/vp_verify.py run-vectors
+
+      - name: Verify v1.1 example chain
+        run: |
+          python3 scripts/vp_verify.py verify-chain \
+            --domain-doc docs/spec/examples/well-known-provenance-v1.1.example.json \
+            --chain-doc docs/spec/examples/provenance-chain.example.json \
+            --evaluated-at 2026-02-15T00:00:00Z

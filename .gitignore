@@ -84,3 +84,6 @@ CVS/
 **/*.log
 000.txt
 /000/**.*
+
+deploy-run
+deploy/
