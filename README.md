@@ -1,6 +1,6 @@
 # Verified Provenance
 
-Prove what is real in a synthetic world.
+Make provenance and integrity evidence independently verifiable.
 
 This public repository is the open-facing home for:
 - specifications
@@ -60,6 +60,13 @@ python3 scripts/vp_verify.py verify-url https://acmewidgets.com/news/new-widget-
 - Portable proofs
 - Independent verification
 - Privacy-preserving defaults
+
+## What Verification Means
+Verified Provenance verifies specific technical evidence: content fingerprints,
+signatures, timestamps, key status, and event-chain continuity under a declared
+policy. That evidence does not, by itself, prove human authorship, originality,
+ownership, identity, or truth. Those conclusions depend on the identity binding,
+creation process, surrounding evidence, and applicable legal or factual context.
 
 ## Status
 This project is under active development and specifications are currently draft (`v1` and `v1.1`).

@@ -1,7 +1,7 @@
 # Verified Provenance Discovery and Evidence Specification v1.1 (Draft)
 
 ## 1. Purpose
-This specification defines deterministic discovery and durable provenance evidence for long-term authenticity verification.
+This specification defines deterministic discovery and durable evidence for long-term provenance and integrity verification.
 
 v1.1 extends v1 discovery with a mandatory append-only event model.
 
