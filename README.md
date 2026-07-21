@@ -73,6 +73,3 @@ This project is under active development and specifications are currently draft 
 
 ## License
 MIT. See `LICENSE`.
-
-## Links
-- Website: [verifiedprovenance.com](https://verifiedprovenance.com)
